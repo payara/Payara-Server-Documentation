@@ -3,23 +3,26 @@
     "pluginsConfig": {
         "versions": {
             "gitbookConfigURL": "https://raw.githubusercontent.com/payara/Payara-Server-Documentation/next/book.json",
-            "includeFilepath": true,
             "options": [
                 {
                     "value": "https://payara.gitbooks.io/payara-server/content/",
                     "text": "LATEST",
+            "includeFilepath": true,
                     "selected": true
                 },
                 {
                     "value": "https://payara.gitbooks.io/payara-server/content/v/161.1/",
+            "includeFilepath": true,
                     "text": "161.1"
                 },
                 {
                     "value": "https://payara.gitbooks.io/payara-server/content/v/161/",
+            "includeFilepath": true,
                     "text": "161"
                 },
                 {
                     "value": "https://payara.gitbooks.io/payara-server/content/v/154/",
+            "includeFilepath": true,
                     "text": "154"
                 }
             ]
