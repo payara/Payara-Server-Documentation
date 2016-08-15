@@ -3,6 +3,7 @@
     "pluginsConfig": {
         "versions": {
             "gitbookConfigURL": "https://raw.githubusercontent.com/payara/Payara-Server-Documentation/next/book.json",
+            "includeFilepath": true,
             "options": [
                 {
                     "value": "https://payara.gitbooks.io/payara-server/content/",
