@@ -11,6 +11,10 @@
                     "selected": true
                 },
                 {
+                    "value": "https://payara.gitbooks.io/payara-server/content/v/162/",
+                    "text": "162"
+                },
+                 {
                     "value": "https://payara.gitbooks.io/payara-server/content/v/161.1/",
             "includeFilepath": true,
                     "text": "161.1"
