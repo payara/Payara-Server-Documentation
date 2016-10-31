@@ -15,17 +15,14 @@
                 },
                  {
                     "value": "https://payara.gitbooks.io/payara-server/content/v/161.1/",
-            "includeFilepath": true,
                     "text": "161.1"
                 },
                 {
                     "value": "https://payara.gitbooks.io/payara-server/content/v/161/",
-            "includeFilepath": true,
                     "text": "161"
                 },
                 {
                     "value": "https://payara.gitbooks.io/payara-server/content/v/154/",
-            "includeFilepath": true,
                     "text": "154"
                 }
             ]
