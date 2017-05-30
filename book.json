@@ -6,8 +6,12 @@
             "options": [
                 {
                     "value": "https://payara.gitbooks.io/payara-server/content/",
-                    "text": "LATEST (171)",
+                    "text": "LATEST (172)",
                     "selected": true
+                },
+                {
+                    "value": "https://payara.gitbooks.io/payara-server/content/v/171/",
+                    "text": "171"
                 },
                 {
                     "value": "https://payara.gitbooks.io/payara-server/content/v/164/",
