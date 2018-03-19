@@ -17,3 +17,4 @@ _book
 
 #Vim swap
 *.swp
+/temp/
