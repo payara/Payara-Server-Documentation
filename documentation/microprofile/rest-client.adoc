@@ -1,0 +1,24 @@
+= Eclipse MicroProfile Rest Client API
+
+_Since *4.1.2.182*; *5.182*&nbsp;_
+
+Provided version of the API: {{ book.mpRestClientSpecUrl }}[MicroProfile Rest Client {{ book.mpRestClientVersion }}]
+
+== Background
+
+The MicroProfile Rest Client provides a type-safe approach to invoke RESTful services over HTTP. An aim of this specification is
+to provide a much more natural coding style, with the underlying MicroProfile implementation handling the communication between the
+client and service.
+
+The https://github.com/eclipse/microprofile-rest-client/tree/microprofile-rest-client-1.1[Eclipse MicroProfile Rest Client] 
+repository contains a number of 
+https://github.com/eclipse/microprofile-rest-client/blob/microprofile-rest-client-1.1/spec/src/main/asciidoc/clientexamples.asciidoc[examples] 
+and information about how to use this API.
+
+== CDI
+
+== Programmatic Lookup
+
+== Async
+
+== Providers
