@@ -22,16 +22,43 @@ therefore, supports all specifications of MicroProfile.
 |Specifications
 |Maven
 
+| 1.3
+|
+* JAX-RS 2.0
+* CDI 1.2
+* JSON-P 1.0
+* https://github.com/eclipse/microprofile-config/releases/tag/1.2[Config 1.2]
+* https://github.com/eclipse/microprofile-metrics/releases/tag/1.1[Metrics 1.1]
+* https://github.com/eclipse/microprofile-health/releases/tag/1.0[Health Check 1.0]
+* https://github.com/eclipse/microprofile-fault-tolerance/releases/tag/1.0[Fault Tolerance 1.0]
+* https://github.com/eclipse/microprofile-jwt-auth/releases/tag/1.0[JWT Authentication 1.0]
+* https://github.com/eclipse/microprofile-opentracing/releases/tag/1.0[OpenTracing 1.0]
+* https://github.com/eclipse/microprofile-open-api/releases/tag/1.0[OpenAPI 1.0]
+* https://github.com/eclipse/microprofile-rest-client/releases/tag/1.1[Rest Client 1.1]
+
+
+| [source, xml]
+----
+<dependency>
+    <groupId>org.eclipse.microprofile</groupId>
+    <artifactId>microprofile</artifactId>
+    <version>1.3</version>
+    <type>pom</type>
+    <scope>provided</scope>
+</dependency>
+----
+
+
 | 1.2
 |
 * JAX-RS 2.0
 * CDI 1.2
 * JSON-P 1.0
-* {{ book.mpConfigSpecUrl }}[Config {{ book.mpConfigVersion }}]
-* {{ book.mpMetricsSpecUrl }}[Metrics {{ book.mpMetricsVersion }}]
-* {{ book.mpHealthSpecUrl }}[Health Check{{ book.mpHealthVersion }}]
-* {{ book.mpFaultToleranceSpecUrl }}[Fault Tolerance {{ book.mpFaultToleranceVersion }}]
-* {{ book.mpJwtSpecUrl }}[JWT Authentication {{ book.mpJwtVersion }}]
+* https://github.com/eclipse/microprofile-config/releases/tag/1.1[Config 1.1]
+* https://github.com/eclipse/microprofile-metrics/releases/tag/1.0[Metrics 1.0]
+* https://github.com/eclipse/microprofile-health/releases/tag/1.0[Health Check 1.0]
+* https://github.com/eclipse/microprofile-fault-tolerance/releases/tag/1.0[Fault Tolerance 1.0]
+* https://github.com/eclipse/microprofile-jwt-auth/releases/tag/1.0[JWT Authentication 1.0]
 
 
 | [source, xml]
@@ -85,8 +112,11 @@ therefore, supports all specifications of MicroProfile.
 
 == Payara Support for MicroProfile
 
+Version1.3::
+Version 1.3 of MicroProfile includes 3 new APIs, and updates to the existing Metrics and Config APIs. 
+This is supported by both Payara Server and Payara Micro from release *4.1.2.182* and *5.182*
 Version 1.2::
-Version 1.2 of Microprofile includes 4 new APIs and an update to the existing config API and is 
+Version 1.2 of MicroProfile includes 4 new APIs and an update to the existing config API and is 
 supported by both Payara Server and Payara Micro from release *4.1.2.181* and *5.181*
 Version 1.1::
 Version 1.1 of the MicroProfile specification includes the Config 1.0 API and is
