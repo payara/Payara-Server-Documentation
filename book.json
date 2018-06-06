@@ -31,6 +31,8 @@
         "mpFaultToleranceVersion": "1.0",
         "mpFaultToleranceSpecUrl": "https://github.com/eclipse/microprofile-fault-tolerance/releases/tag/1.0",
         "mpJwtVersion": "1.0",
-        "mpJwtSpecUrl": "https://github.com/eclipse/microprofile-jwt-auth/releases/tag/1.0"
+        "mpJwtSpecUrl": "https://github.com/eclipse/microprofile-jwt-auth/releases/tag/1.0",
+        "mpRestClientVersion": "1.1",
+        "mpRestClientSepcUrl": "https://github.com/eclipse/microprofile-rest-client/releases/tag/1.1"
     }
 }
