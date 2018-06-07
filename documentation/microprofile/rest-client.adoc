@@ -16,9 +16,44 @@ https://github.com/eclipse/microprofile-rest-client/blob/microprofile-rest-clien
 and information about how to use this API.
 
 == CDI
+Full MicroProfile documentation available https://github.com/eclipse/microprofile-rest-client/blob/microprofile-rest-client-1.1/spec/src/main/asciidoc/cdi.asciidoc[here]
 
-== Programmatic Lookup
+Rest Client interfaces may be injected as CDI beans. To do this, you must first register your interface class by using the `@RegisterRestClient` annotation, and then use the `@RestClient` qualifier on the injected bean, like so:
+
+```java```
+@RegisterRestClient
+public interface MyServiceClient {
+    @GET
+    @Path("/greet")
+    Response greet();
+}
+
+@ApplicationScoped
+public class MyService {
+    @Inject
+    @RestClient
+    private MyServiceClient client;
+}
+```
 
 == Async
+Full MicroProfile documentation available https://github.com/eclipse/microprofile-rest-client/blob/microprofile-rest-client-1.1/spec/src/main/asciidoc/async.asciidoc[here]
+
+It is possible for Rest Client interface methods to be declared asynchronous. This allows the thread invoking the interface method to proceed while the RESTful request occurs on another thread.
+
+Any method of the interface class is deemed an asynchonronous method if it has a return type of `CompletionStage`.
 
 == Providers
+Full MicroProfile documentation available https://github.com/eclipse/microprofile-rest-client/blob/microprofile-rest-client-1.1/spec/src/main/asciidoc/providers.asciidoc[here]
+
+The RestClientBuilder interface extends the Configurable interface from JAX-RS, allowing a user to register custom providers while its being built. Payara Server and Micro support the following provider types:
+* ClientRequestFilter
+* ClientResponseFilter
+* MessageBodyReader
+* MessageBodyWriter
+* ParamConverter
+* ReaderInterceptor
+* WriterInterceptor
+* ResponseExceptionMapper
+
+See the full https://github.com/eclipse/microprofile-rest-client/blob/master/spec/src/main/asciidoc/providers.asciidoc#provider-declaration[MicroProfile documentation] for the registration methods.
