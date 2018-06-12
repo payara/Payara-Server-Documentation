@@ -46,7 +46,7 @@ Any method of the interface class is deemed an asynchonronous method if it has a
 == Providers
 Full MicroProfile documentation available https://github.com/eclipse/microprofile-rest-client/blob/microprofile-rest-client-1.0/spec/src/main/asciidoc/providers.asciidoc[here]
 
-The RestClientBuilder interface extends the Configurable interface from JAX-RS, allowing a user to register custom providers while its being built. Payara Server and Micro support the following provider types:
+The RestClientBuilder interface extends the Configurable interface from JAX-RS, allowing a user to register custom providers while it's being built. Payara Server and Micro support the following provider types:
 * ClientRequestFilter
 * ClientResponseFilter
 * MessageBodyReader
