@@ -171,6 +171,7 @@
 ** link:documentation/microprofile/healthcheck.adoc[Health Check API]
 ** link:documentation/microprofile/faulttolerance.adoc[Fault Tolerance API]
 ** link:documentation/microprofile/jwt.adoc[JWT Authentication API]
+** link:documentation/microprofile/rest-client.adoc[Rest Client API]
 * link:documentation/ecosystem/ecosystem.adoc[Ecosystem]
 ** link:documentation/ecosystem/maven-plugin.adoc[Payara Micro Maven Plugin]
 ** link:documentation/ecosystem/netbeans-plugin.adoc[Payara NetBeans Plugin]
