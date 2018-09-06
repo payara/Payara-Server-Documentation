@@ -220,3 +220,6 @@
 ** link:release-notes/release-notes-152.adoc[Payara Server 4.1.152 Release Notes]
 ** link:release-notes/release-notes-151.adoc[Payara Server 4.1.151 Release Notes]
 ** link:release-notes/release-notes-144.adoc[Payara Server 4.1.144 Release Notes]
+
+* link:schemas/README.adoc[Schemas]
+** link:schemas/payara-web-app_4.dtd[Payara Web App 4]

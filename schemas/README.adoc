@@ -1,0 +1,5 @@
+[[payara-schemas]]
+= Payara Schemas
+
+Schemas for the Payara Platform.
+
