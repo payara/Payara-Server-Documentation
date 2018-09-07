@@ -1,3 +1,0 @@
-# Extended Documentation
-
-Documentation of all the features added on top of GlassFish Server 4 Open Source Edition.

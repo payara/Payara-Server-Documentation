@@ -1,4 +1,0 @@
-# Fixed Issues
-This section details the GitHub issues marked as bugs that have been fixed for this release.
-* 272 - Cannot log in to Admin Console of Domain created from payara-domain.jar Template
-* 275 - Bug on click Enable Secure Admin button
