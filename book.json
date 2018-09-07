@@ -1,64 +1,66 @@
 {
-    "plugins": [ "versions" ],
-    "pluginsConfig": {
-        "versions": {
-            "gitbookConfigURL": "https://raw.githubusercontent.com/payara/Payara-Server-Documentation/next/book.json",
-            "options": [
-                {
-                    "value": "https://docs.payara.fish/",
-                    "text": "LATEST (5.182)",
-                    "selected": true
-                },
-                {
-                    "value": "https://docs.payara.fish/v/5.181/",
-                    "text": "5.181",
-                    "selected": true
-                },
-                {
-                    "value": "https://docs.payara.fish/v/181/",
-                    "text": "4.1.2.181"
-                },
-                {
-                    "value": "https://docs.payara.fish/v/174/",
-                    "text": "174"
-                },
-                {
-                    "value": "https://docs.payara.fish/v/173/",
-                    "text": "173"
-                },
-                {
-                    "value": "https://docs.payara.fish/v/172/",
-                    "text": "172"
-                },
-                {
-                    "value": "https://docs.payara.fish/v/171/",
-                    "text": "171"
-                },
-                {
-                    "value": "https://docs.payara.fish/v/164/",
-                    "text": "164"
-                },
-                {
-                    "value": "https://docs.payara.fish/v/163/",
-                    "text": "163"
-                },
-                {
-                    "value": "https://docs.payara.fish/v/162/",
-                    "text": "162"
-                },
-                 {
-                    "value": "https://docs.payara.fish/v/161.1/",
-                    "text": "161.1"
-                },
-                {
-                    "value": "https://docs.payara.fish/v/161/",
-                    "text": "161"
-                },
-                {
-                    "value": "https://docs.payara.fish/v/154/",
-                    "text": "154"
-                }
-            ]
-        }
-    }
-} 
+	"plugins": ["versions"],
+	"pluginsConfig": {
+		"versions": {
+			"gitbookConfigURL": "https://raw.githubusercontent.com/payara/Payara-Server-Documentation/next/book.json",
+			"options": [{
+					"value": "https://docs.payara.fish/",
+					"text": "LATEST (5.183)",
+					"selected": true
+				},
+				{
+					"value": "https://docs.payara.fish/v/5.182/",
+					"text": "5.182"
+				},
+				{
+					"value": "https://docs.payara.fish/v/5.181/",
+					"text": "5.181"
+				},
+				{
+					"value": "https://docs.payara.fish/v/181/",
+					"text": "4.1.2.181"
+				},
+				{
+					"value": "https://docs.payara.fish/v/174/",
+					"text": "174"
+				},
+				{
+					"value": "https://docs.payara.fish/v/173/",
+					"text": "173"
+				},
+				{
+					"value": "https://docs.payara.fish/v/172/",
+					"text": "172"
+				},
+				{
+					"value": "https://docs.payara.fish/v/171/",
+					"text": "171"
+				},
+				{
+					"value": "https://docs.payara.fish/v/164/",
+					"text": "164"
+				},
+				{
+					"value": "https://docs.payara.fish/v/163/",
+					"text": "163"
+				},
+				{
+					"value": "https://docs.payara.fish/v/162/",
+					"text": "162"
+				},
+				{
+					"value": "https://docs.payara.fish/v/161.1/",
+					"text": "161.1"
+				},
+				{
+					"value": "https://docs.payara.fish/v/161/",
+					"text": "161"
+				},
+				{
+					"value": "https://docs.payara.fish/v/154/",
+					"text": "154"
+				}
+			]
+		}
+	}
+}
