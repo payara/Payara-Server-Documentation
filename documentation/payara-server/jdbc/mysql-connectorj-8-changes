@@ -1,0 +1,26 @@
+[[mysql-connectorj-8-changes]]
+= MySQL Connector/J 8 Changes
+
+_Since Payara Server 4.1.2.184_
+
+MySQL Connector/J underwent a package name change with the 8.0 release, meaning that to
+make use of the newer connector version you'll need to configure your connection pools
+slightly differently as to before.
+
+[[changes]]
+== Changes
+
+To support both the original connector and the new connector, we've added the newer
+connector version as a separate datasource type. When selecting the database driver
+vendor for a new JDBC connection pool, there are now two options for MySQL: _MySql_ and
+_MySql8_. If using a MySQL Connector/J version lower than 8.0, use the _MySql_ option,
+and if using a version greater than or equal to 8.0 use the new _MySql8_ option.
+
+If you prefer to specify the class name yourself, the new class names to use for
+the new 8.0 and above Connector/J are `com.mysql.cj.jdbc.MysqlConnectionPoolDataSource`
+for non-XA datasources, and `com.mysql.cj.jdbc.MysqlXADataSource` for XA datasources.
+If using an older Connector/J version, use the original class names of
+`com.mysql.jdbc.jdbc2.optional.MysqlDataSource` and
+`com.mysql.jdbc.jdbc2.optional.MysqlXADataSource` for non-XA and XA connection pools
+respectively.
+
