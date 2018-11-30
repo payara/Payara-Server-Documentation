@@ -27,6 +27,7 @@
 *** link:documentation/payara-server/server-configuration/virtual-servers.adoc[Virtual Servers]
 ** link:documentation/payara-server/jacc.adoc[JACC]
 ** link:documentation/payara-server/jdbc/jdbc-connection-validation.adoc[JDBC]
+*** link:documentation/payara-server/jdbc/mysql-connectorj-8-changes.adoc[MySql Connector/J 8 Changes]
 ** link:documentation/payara-server/logging/logging.adoc[Logging]
 *** link:documentation/payara-server/logging/ansi-colours.adoc[ANSI Coloured Logging]
 *** link:documentation/payara-server/logging/log-compression.adoc[Compression of log files]
