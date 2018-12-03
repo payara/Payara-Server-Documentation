@@ -5,8 +5,12 @@
 			"gitbookConfigURL": "https://raw.githubusercontent.com/payara/Payara-Server-Documentation/next/book.json",
 			"options": [{
 					"value": "https://docs.payara.fish/",
-					"text": "LATEST (5.183)",
+					"text": "LATEST (5.184)",
 					"selected": true
+				},
+				{
+					"value": "https://docs.payara.fish/v/5.183/",
+					"text": "5.183"
 				},
 				{
 					"value": "https://docs.payara.fish/v/5.182/",
