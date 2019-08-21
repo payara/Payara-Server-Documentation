@@ -101,7 +101,9 @@ asadmin set-asadmin-recorder-configuration --enabled true --outputLocation /home
 == Running the Generated Scripts
 
 Documentation on running asadmin scripts can be found in
-the _GlassFish Server Administration Guide_, under the _Run a Set of asadmin Subcommands From a File_ section. The guide can be found in the _GlassFish Server {{ book.glassfishVersion }} Open Source Edition Documentation_ referenced in the link:/documentation/payara-server/payara-server.adoc[Payara Server Documentation Overview]
+the _GlassFish Server Administration Guide_, under the _Run a Set of asadmin 
+Subcommands From a File_ section. The guide can be found in the _GlassFish Server {{ book.glassfishVersion }} 
+Open Source Edition Documentation_ referenced in the link:/documentation/payara-server/README.adoc[Payara Server Documentation Overview]
 
 [[asadmin-commands]]
 == Asadmin Commands

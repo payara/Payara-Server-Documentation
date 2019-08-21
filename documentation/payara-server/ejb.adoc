@@ -149,7 +149,7 @@ the module, use the `--forceName` command option.
 _Since Payara Server 4.1.1.164_
 
 It is possible to persist an EJB Timer to the Hazelcast cluster rather than
-to a database. The same feature is available in link::/documentation/payara-micro/persistent-ejb-timers.adoc[Payara Micro].
+to a database. The same feature is available in link:/documentation/payara-micro/persistent-ejb-timers.adoc[Payara Micro].
 
 Persisting an EJB Timer to the Hazelcast cluster means that the cluster itself
 will store the timer details, preserving it even if the original instance

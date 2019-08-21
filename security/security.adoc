@@ -22,7 +22,7 @@ specific release that fixed that vulnerability.
 
 In order to locate the release a security update has been included for a
 specific vulnerability, search in the
-link:/release-notes/security-fix-list.adoc[security fixes summary]
+link:/security/security-fix-list.adoc[security fixes summary]
 page for the specific vulnerability using its
 https://cve.mitre.org/cve/identifiers/[CVE identifier].
 

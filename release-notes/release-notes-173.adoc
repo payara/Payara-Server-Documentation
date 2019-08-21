@@ -200,7 +200,7 @@ Frequent SQL Trace store record over the whole life time of the server.]
 property of ORB gets reset to "true"]
 * https://github.com/payara/Payara/pull/1660[PAYARA-1733 - Package
 Payara Public API dependency into Embedded editions]
-* link:'1767[PAYARA-1767 - Add option to send configured hostname even
+* https://github.com/payara/Payara/pull/1767[PAYARA-1767 - Add option to send configured hostname even
 for the local node]
 * https://github.com/payara/Payara/pull/1725[PAYARA-1782 - add-library
 command should load the library dynamically]

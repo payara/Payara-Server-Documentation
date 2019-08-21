@@ -5,7 +5,7 @@ _Since version 4.1.2.181_
 
 WARNING: This feature is released in *_technical preview_*. It's fully usable 
 and supported but it's subject to change in future versions. Read more in 
-link:general-info/technical-preview.adoc[Features in Technical Preview].
+link:/general-info/technical-preview.adoc[Features in Technical Preview].
 
 Payara Notification Logging Service captures information about events which come 
 from other services, such as the JMX Monitoring Service, the HealthCheck service 
@@ -40,14 +40,14 @@ file can be found at:
 
 This section will go through following topics:
 
-* link:payara-notification-logging.adoc#enabling-or-disabling-logging-to-a-file[Enabling or Disabling Logging to a File]
-* link:payara-notification-logging.adoc#configuring-log-file-rotation[Configuring Log File Rotation]
-** link:payara-notification-logging.adoc#rotation-on-date-change[Rotation on Date Change]
-** link:payara-notification-logging.adoc#rotation-on-file-size[Rotation on File Size]
-** link:payara-notification-logging.adoc#rotation-on-time-limit[Rotation on Time Limit]
-* link:payara-notification-logging.adoc#to-set-maximum-number-of-history-files[To Set Maximum Number of History Files]
-* link:payara-notification-logging.adoc#to-change-the-name-and-location-of-the-log-file[To Change the Name and Location of the Log File]
-* link:payara-notification-logging.adoc#to-set-compress-on-rotation[To Set Compress on Rotation]
+* link:notification-logging.adoc#enabling-or-disabling-logging-to-a-file[Enabling or Disabling Logging to a File]
+* link:notification-logging.adoc#configuring-log-file-rotation[Configuring Log File Rotation]
+** link:notification-logging.adoc#rotation-on-date-change[Rotation on Date Change]
+** link:notification-logging.adoc#rotation-on-file-size[Rotation on File Size]
+** link:notification-logging.adoc#rotation-on-time-limit[Rotation on Time Limit]
+* link:notification-logging.adoc#to-set-maximum-number-of-history-files[To Set Maximum Number of History Files]
+* link:notification-logging.adoc#to-change-the-name-and-location-of-the-log-file[To Change the Name and Location of the Log File]
+* link:notification-logging.adoc#to-set-compress-on-rotation[To Set Compress on Rotation]
 
 NOTE: Payara server most be restarted after changes are made to logging options 
 for it to apply. 
@@ -87,10 +87,10 @@ to rotate at date change, rotate when time limit is reached and, finally based o
 maximum number of history files. Further details about these options will be 
 explained in the following section:
 
-* link:payara-notification-logging.adoc#rotation-on-date-change[Rotation on Date Change]
-* link:payara-notification-logging.adoc#rotation-on-file-size[Rotation on File Size]
-* link:payara-notification-logging.adoc#rotation-on-time-limit[Rotation on Time Limit]
-* link:payara-notification-logging.adoc#to-set-maximum-number-of-history-files[To Set Maximum Number of History Files]
+* link:notification-logging.adoc#rotation-on-date-change[Rotation on Date Change]
+* link:notification-logging.adoc#rotation-on-file-size[Rotation on File Size]
+* link:notification-logging.adoc#rotation-on-time-limit[Rotation on Time Limit]
+* link:notification-logging.adoc#to-set-maximum-number-of-history-files[To Set Maximum Number of History Files]
 
 
 [[rotation-on-date-change]]
