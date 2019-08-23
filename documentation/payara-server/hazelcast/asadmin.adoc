@@ -182,7 +182,7 @@ Hazelcast group.||No
 
 |`--licensekey`
 
-`-lk`|Hazelcast License|Enables link::https://hazelcast.com/products/enterprise/[Hazelcast Enterprise]
+`-lk`|Hazelcast License|Enables https://hazelcast.com/products/enterprise/[Hazelcast Enterprise]
 features.||No
 
 |`--lite`|Boolean|Sets the cluster to lite mode, where it will cluster but
