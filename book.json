@@ -6,7 +6,7 @@
 			"options": [
 				{
 					"value": "https://docs.payara.fish/",
-					"test": "LATEST (5.193)",
+					"text": "LATEST (5.193)",
 					"selected": true
 				},
 				{
