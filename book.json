@@ -2,7 +2,7 @@
 	"plugins": ["versions"],
 	"pluginsConfig": {
 		"versions": {
-			"gitbookConfigURL": "https://raw.githubusercontent.com/payara/Payara-Server-Documentation/next/book.json",
+			"gitbookConfigURL": "https://raw.githubusercontent.com/payara/Payara-Server-Documentation/config/book.json",
 			"options": [
 				{
 					"value": "https://docs.payara.fish/",
