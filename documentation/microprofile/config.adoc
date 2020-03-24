@@ -81,6 +81,14 @@ These are modifiable by current admin console functionality.
 |Retrieves and stores config values in the password alias store. These will be 
 available to all server instances in a domain.
 
+|`alias`
+|170
+|Reads configuration properties from a microprofile-config-alias.properties file. This
+should be stored in the same location as your microprofile-config.properties file.
+This file can be used to reference aliased properties which will be translated to their
+actual values upon retrieval. The property values should be in the format referenced
+here: link:documentation/payara-server/server-configuration/var-substitution/types-of-variables[Types of Variables]
+
 |===
 
 {% if book.currentVersion == "4.1.2.181" %}
