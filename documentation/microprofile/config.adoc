@@ -32,7 +32,7 @@ supported ConfigSources:
 
 |`directory`
 |90
-|Reads configuration properties from files in a specified directory. Each file name 
+|Reads configuration properties from files in a specified directory. Each file name
 is the confguration property name and the contents of the file are the config property
 value. This config source can be used to read https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-files-from-a-pod[Kubernetes secrets files].
 See below on how to specify the directory to be used for secrets files using asadmin.
@@ -78,7 +78,7 @@ These are modifiable by current admin console functionality.
 
 |`password`
 |105
-|Retrieves and stores config values in the password alias store. These will be 
+|Retrieves and stores config values in the password alias store. These will be
 available to all server instances in a domain.
 
 |===
@@ -156,14 +156,14 @@ you can use in your application to find information about the Payara runtime env
 [[config-ordinal-configuration]]
 == Config Ordinal Configuration
 
-Config Ordinal can be configured by using Admin Console or Asadmin commands. 
+Config Ordinal can be configured by using Admin Console or Asadmin commands.
 
 _Since *5.183*&nbsp;_
 
 [[using-the-admin-console]]
 === Using the Admin Console
 
-To configure the Config Ordinal in the Admin Console, go to Configuration 
+To configure the Config Ordinal in the Admin Console, go to Configuration
 → [instance-configuration (like server-config)] → MicroProfile → Config → Ordinal:
 
 image:/images/microprofile/config-ordinal.png[Set Config Ordinal]
@@ -171,7 +171,7 @@ image:/images/microprofile/config-ordinal.png[Set Config Ordinal]
 [[using-asadmin-commands]]
 === Using Asadmin Commands
 
-IMPORTANT: A `--source` value of `jndi` is not supported for these asadmin commands in 
+IMPORTANT: A `--source` value of `jndi` is not supported for these asadmin commands in
 4.1.2.173. The JNDI `ConfigSource` does exist and is usable from the Config API, though.
 
 ==== `set-config-ordinal`
@@ -180,7 +180,7 @@ IMPORTANT: A `--source` value of `jndi` is not supported for these asadmin comma
 `asadmin> set-config-ordinal --ordinal=<integer.value> --source=domain|config|
 server|application|module|cluster`
 *Aim*::
-Provides a way to set the ordinal for a given config source. Where multiple 
+Provides a way to set the ordinal for a given config source. Where multiple
 configuration properties exist, the property from a source with a  higher
 ordinal number is preferred.
 
@@ -255,14 +255,14 @@ asadmin> get-config-ordinal --source=cluster
 [[config-property-configuration]]
 == Config Property Configuration
 
-Config Property can be configured by using Admin Console or Asadmin commands. 
+Config Property can be configured by using Admin Console or Asadmin commands.
 
 _Since *5.183*&nbsp;_
 
 [[using-the-admin-console]]
 === Using the Admin Console
 
-To configure the Config Property in the Admin Console, go to Configuration 
+To configure the Config Property in the Admin Console, go to Configuration
 → [instance-configuration (like server-config)] → MicroProfile → Config → Property:
 
 image:/images/microprofile/config-property.png[Set Config Property]
@@ -485,14 +485,14 @@ asadmin> get-config-property
 [[config-secrets-directory-configuration]]
 == Config Secrets Directory Configuration
 
-Config Secrets Directory can be configured by using Admin Console or Asadmin commands. 
+Config Secrets Directory can be configured by using Admin Console or Asadmin commands.
 
 _Since *5.183*&nbsp;_
 
 [[using-the-admin-console]]
 === Using the Admin Console
 
-To configure the Config Secrets Directory in the Admin Console, go to Configuration 
+To configure the Config Secrets Directory in the Admin Console, go to Configuration
 → [instance-configuration (like server-config)] → MicroProfile → Config → Directory:
 
 image:/images/microprofile/config-property.png[Set Config Property]
@@ -578,3 +578,63 @@ asadmin> get-config-secrets-dir
     --target=myAppCluster
 ----
 
+
+[[config-cache-duration-configuration]]
+== Config Cache Duration
+
+Config cache duration can be configured by using Asadmin commands.
+By default properties have a TTL (time to live) of 60 seconds.
+That means each individual property does not change for 60 seconds since it has been resolved before.
+Therefore it can take up to 60 seconds for changes made visiable by a config source to become effective.
+In many instances, in particular for properties not resolved regularly change become visible immediate or faster than the cache duration as they have not been resolved for some seconds already.
+
+_Since *5.202*&nbsp;_
+
+=== Using Asadmin Commands
+
+==== `set-config-cache`
+
+*Usage*::
+`asadmin> set-config-cache --duration=<duration.in.second> --target=<target[default:server]>`
+*Aim*::
+Sets the cache duration for the target instance(s). Any duration equal to or below zero disables the caching of MP config properties.
+
+===== Command Options
+
+[cols="1,10,1,1", options="header"]
+|===
+|Option
+|Description
+|Default
+|Mandatory
+
+|`duration`
+|Duration in seconds properties are cached
+|60
+|yes
+
+|`target`
+|The target configuration where the command should be run
+|server (the DAS)
+|no
+
+|===
+
+
+===== Example
+
+Disable caching:
+[source,Shell]
+----
+asadmin> set-config-cache
+    --duration=0
+    --target=myAppCluster
+----
+
+Set cache TTL (time to live) for properties to 30 seconds.
+[source,Shell]
+----
+asadmin> set-config-cache
+    --duration=30
+    --target=myAppCluster
+----
