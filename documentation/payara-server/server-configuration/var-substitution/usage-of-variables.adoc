@@ -30,7 +30,7 @@ Variable references can be used inside text values also in the following places 
 *   In JNDI lookups inside an application
 * In pre and post boot command files. _[Since Payara Server 4.1.2.174]_
 * In JVM Options. _[Since Payara Server 4.1.2.182 and 5.182]_
-* In microprofile-config-alias.properties file _[Since Payara Server 5.202]_.
+* In payara-expression-config.properties file _[Since Payara Server 5.202]_.
 
 
 [[examples]]
