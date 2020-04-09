@@ -7,7 +7,7 @@ Provided version of the API: {{ book.mpMetricsSpecUrl }}[MicroProfile Metrics {{
 
 The Metrics API was designed to provide monitoring support for applications as well as the underlying runtime. This is considered separate to ***health checks*** which are concerned with a binary status of "healthy" or "unhealthy". In design, the Metrics API has borrowed heavily from DropWizard Metrics, so many of the concepts in the API will be familiar.
 
-For a full overview of the API, review https://github.com/eclipse/microprofile-metrics/releases[the documentation for the appropriate release.] 
+For a full overview of the API, review https://github.com/eclipse/microprofile-metrics/releases[the documentation for the appropriate release.]
 
 A key goal of the specification was to provide HTTP endpoints in Prometheus format (as well as JSON). Since the https://prometheus.io/docs/instrumenting/exposition_formats/#text-format-details[Prometheus Text format] is widely used by monitoring products other than Prometheus, this gives a lot of compatibility out-of-the-box.
 

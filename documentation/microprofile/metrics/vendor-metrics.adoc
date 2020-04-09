@@ -37,7 +37,7 @@ IMPORTANT: Payara Server has a more extensive range of MBeans available than Pay
 
 _Since Payara Server 4.1.2.182 and 5.182_
 
-It is possible to create a template for a metric based on AMX MBeans properties for multiple resource configurations or similar objects (like JDBC connection pools for example). 
+It is possible to create a template for a metric based on AMX MBeans properties for multiple resource configurations or similar objects (like JDBC connection pools for example).
 
 [[simple-templating]]
 === Simple Templating
@@ -76,11 +76,7 @@ Which will yield the following results:
 # TYPE vendor_jdbc_connection_pool_numconnfree_total counter
 # HELP vendor_jdbc_connection_pool_numconnfree_total The total number of free connections in the pool as of the last sampling.
 vendor_jdbc_connection_pool_numconnfree_total{name="resources/DerbyPool"} 0
-# TYPE vendor_jdbc_connection_pool_numconnfree_total counter
-# HELP vendor_jdbc_connection_pool_numconnfree_total The total number of free connections in the pool as of the last sampling.
 vendor_jdbc_connection_pool_numconnfree_total{name="resources/H2Pool"} 0
-# TYPE vendor_jdbc_connection_pool_numconnfree_total counter
-# HELP vendor_jdbc_connection_pool_numconnfree_total The total number of free connections in the pool as of the last sampling.
 vendor_jdbc_connection_pool_numconnfree_total{name="resources/__TimerPool"} 0 0
 ----
 

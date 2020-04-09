@@ -3,12 +3,12 @@
 
 _Since Payara Server 4.1.2.182 and 5.182_
 
-The Payara API provides a `@OAuth2AuthorisationMechanism` annotation that creates an authorisation mechanism for OAuth2 support. This works in the same way as other authorisation mechanisms in the Java EE Security API.
+The Payara API provides a `@OAuth2AuthenticationDefinition` annotation that creates an authorisation mechanism for OAuth2 support. This works in the same way as other authorisation mechanisms in the Java EE Security API.
 
 [[usage]]
 == Usage
 
-The OAuth2 authentication mechanism is defined through the `@OAuth2AuthorisationMechanism` annotation. Specifying this in a valid place as defined by the Java EE Security API will create the mechanism. Often this may mean that any class is a valid position.
+The OAuth2 authentication mechanism is defined through the `@OAuth2AuthenticationDefinition` annotation. Specifying this in a valid place as defined by the Java EE Security API will create the mechanism. Often this may mean that any class is a valid position.
 
 [[usage-example]]
 === Example

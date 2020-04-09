@@ -60,8 +60,8 @@ Contents of _passwordfile.txt_:
 `AS_ADMIN_MASTERPASSWORD=changeit`
 
 NOTE: If you change the master password after generating your key, you’ll need to regenerate and propagate the new key
-to each of your instances since the original key was created using the old (and now incorrect) password. It is currently
-required that `--sync full` be used to overwrite any existing encryption keys.
+to each of your instances since the original key was created using the old (and now incorrect) password. This should
+occur under the default `--sync normal`, but `--sync full` can be used to delete the local copy and resync.
 
 [[enabling-encryption-in-hazelcast]]
 === Enabling Encryption in Hazelcast

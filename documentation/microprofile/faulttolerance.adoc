@@ -18,10 +18,10 @@ In addition to the functionality
 https://github.com/eclipse/microprofile-fault-tolerance/blob/master/spec/src/main/asciidoc/microprofile-fault-tolerance-spec.asciidoc[
 detailed in the spec], the following is also implemented in Payara Server and Payara Micro:
 
-=== Configurable Managed Executor Services
+=== Configurable Executor Services
 The managed and scheduled managed executor pool can be configured via the _set-fault-tolerance-configuration_ asadmin command.
 
-The managed executor service is used to execute methods annotated with `@Asynchronous`, whereas the managed scheduled executor
+The executor service is used to execute methods annotated with `@Asynchronous`, whereas the scheduled executor
 service is used by the CircuitBreaker and Timeout interceptors for their timeout operations (scheduling the circuit breaker
 to be set to half open, and just timing out respectively).
 

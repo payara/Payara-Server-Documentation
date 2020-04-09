@@ -22,7 +22,7 @@ Maven Coordinates: https://mvnrepository.com/artifact/fish.payara.security.conne
 Implements https://oauth.net/2/[OAuth 2.0] standard protocol by implementing Jakarta EE Security
 https://jakarta.ee/specifications/security/1.0/apidocs/javax/security/enterprise/authentication/mechanism/http/HttpAuthenticationMechanism.html[HTTP Authentication Mechanism]
 and https://jakarta.ee/specifications/security/1.0/apidocs/javax/security/enterprise/identitystore/IdentityStore.html[Identity Store]
-for authorization using `@OAuth2AuthorisationMechanism` annotation and provides
+for authorization using `@OAuth2AuthenticationDefinition` annotation and provides
 access to the Identity token and Access token using CDI based injection.
 
 Maven Coordinates: https://mvnrepository.com/artifact/fish.payara.security.connectors/security-connector-oauth2-client[`fish.payara.security.connectors:security-connector-oauth2-client`]
