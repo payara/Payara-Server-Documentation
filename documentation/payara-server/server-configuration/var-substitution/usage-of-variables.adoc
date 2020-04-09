@@ -89,13 +89,14 @@ handlers=${ENV=CONSOLE-HANDLER}
 handlerServices=${ENV=SYS-LOG-HANDLER}
 ----
 
-An examples of variable references with a `microprofile-config-alias.properties` file:
+An examples of variable references with a `payara-expression-config.properties` file:
 
-NOTE: The microprofile-config-alias.properties config source is only available in Payara Server since 5.202
+NOTE: The payara-expression-config.properties config source is only available in Payara Server since 5.202
 
 [source,properties]
 ----
-fish.payara.example.alias.system=${java.home}
-fish.payara.example.alias.env=${ENV=PATH}
-fish.payara.example.alias.password=${ALIAS=secret}
+fish.payara.example.system=${java.home}
+fish.payara.example.env=${ENV=PATH}
+fish.payara.example.password=${ALIAS=secret}
+fish.payara.example.multiple=property containing both an ${ENV=envProperty} and a ${sysProp}
 ----
