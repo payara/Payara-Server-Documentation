@@ -586,7 +586,7 @@ Config cache duration can be configured by using Asadmin commands.
 By default properties have a TTL (time to live) of 60 seconds.
 That means each individual property does not change for 60 seconds since it has been resolved before.
 Therefore it can take up to 60 seconds for changes made visiable by a config source to become effective.
-In many instances, in particular for properties not resolved regularly change become visible immediate or faster than the cache duration as they have not been resolved for some seconds already.
+If properties were not resolved recently, the change can become visible faster than the cache duration or even immediately because some time already passed since they had been last resolved and cached.
 
 _Since *5.202*&nbsp;_
 
