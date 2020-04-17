@@ -30,6 +30,7 @@ Variable references can be used inside text values also in the following places 
 *   In JNDI lookups inside an application
 * In pre and post boot command files. _[Since Payara Server 4.1.2.174]_
 * In JVM Options. _[Since Payara Server 4.1.2.182 and 5.182]_
+* In payara-expression-config.properties file _[Since Payara Server 5.202]_.
 
 
 [[examples]]
@@ -86,4 +87,16 @@ NOTE: Environment variable substitution in the logging properties file is availa
 ----
 handlers=${ENV=CONSOLE-HANDLER}
 handlerServices=${ENV=SYS-LOG-HANDLER}
+----
+
+An examples of variable references with a `payara-expression-config.properties` file:
+
+NOTE: The payara-expression-config.properties config source is only available in Payara Server since 5.202
+
+[source,properties]
+----
+fish.payara.example.system=${java.home}
+fish.payara.example.env=${ENV=PATH}
+fish.payara.example.password=${ALIAS=secret}
+fish.payara.example.multiple=property containing both an ${ENV=envProperty} and a ${sysProp}
 ----
