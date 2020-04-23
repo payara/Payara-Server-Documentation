@@ -1,9 +1,8 @@
 [[h2-database]]
 = H2 Database
 
-H2 is a Java based Database which will replace Derby as the default database 
-in Payara 5. Derby will be still included with Payara 5 but will no 
-longer be the default database.
+H2 is a Java based Database which replaced Derby as the default database 
+in Payara 5. Derby isn't included with Payara 5 since version 5.201.
 
 [[why-replace-derby]]
 == Why replace Derby?
@@ -20,13 +19,7 @@ To start the database run the command below:
 asadmin> start-database
 ----
 
-The above command will start H2 on the default port, which is 9092. To explicitly 
-start Derby run the command below:
-
-[source, shell]
-----
-asadmin> start-database --dbtype derby
-----
+The above command will start H2 on the default port, which is 9092.
 
 [[to-stop-the-database]]
 === To Stop the Database
@@ -35,11 +28,4 @@ To stop the database run the command below:
 [source, shell]
 ----
 asadmin> stop-database
-----
-
-The above command will stop H2 by default. To explicitly stop Derby run the command below:
-
-[source, shell]
-----
-asadmin> stop-database --dbtype derby
 ----
