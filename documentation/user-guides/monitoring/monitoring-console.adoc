@@ -51,7 +51,7 @@ image::/images/monitoring-console/mc_page_menu.png[Page Navigation]
 Since version 5.202 each page switch also updates the URL making the URL bookmarkable.
 URLs can be copied and shared with others to share particular pages with them.
 
-URLs switching with pages changes also means once changed using the dropdown navigation the browser's page history based navigation can be used to go back to already visited pages.
+Updating URLs after switching pages also means that once the page is changed using the dropdown navigation, the browser's page history based navigation can be used to go back to already visited pages.
 
 
 [[monitoring-console-page-layout]]
