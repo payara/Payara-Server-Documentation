@@ -48,6 +48,11 @@ To switch page use the drop-down menu at the top centre of the page.
 
 image::/images/monitoring-console/mc_page_menu.png[Page Navigation]
 
+Since version 5.202 each page switch also updates the URL making the URL bookmarkable.
+URLs can be copied and shared with others to share particular pages with them.
+
+Updating URLs after switching pages also means that once the page is changed using the dropdown navigation, the browser's page history based navigation can be used to go back to already visited pages.
+
 
 [[monitoring-console-page-layout]]
 ==== Changing Page Layout
@@ -90,6 +95,7 @@ When the configuration of a preconfigured page or any of the widgets on it was c
 WARNING: The reset will affect all widgets and the general page settings of the currently shown page. All changes made by the user will be overridden.
 
 To reset all pages and remove all user created pages clear the browser's local storage for the monitoring console page.
+
 
 
 [[monitoring-console-widgets]]
